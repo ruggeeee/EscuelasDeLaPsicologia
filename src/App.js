@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Sidebar from './components/Sidebar';
+import Content from './components/Content';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [isSidebarVisible, setSidebarVisible] = useState(true);
+
+    const toggleSidebar = () => {
+        setSidebarVisible(!isSidebarVisible);
+    };
+
+    return (
+        <div className="App">
+            {isSidebarVisible && <Sidebar toggleSidebar={toggleSidebar} />}
+            <header>
+                <h1>Facultades de la Psicología</h1>
+            </header>
+            <main>
+                <Content toggleSidebar={toggleSidebar} />
+            </main>
+            <footer>
+                <p>&copy; 2025 Proyecto Facultativo</p>
+            </footer>
+        </div>
+    );
+};
 
 export default App;
