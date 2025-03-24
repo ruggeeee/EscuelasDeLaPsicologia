@@ -5,3 +5,24 @@
 .hidden {
     opacity: 0;
 }
+
+
+header h3 {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Suavizar el movimiento y opacidad */
+}
+
+header h3.escuelas-psicologicas {
+    opacity: 1 !important; /* Asegurar que no se desvanezca */
+    transform-origin: center; /* Escalar desde el centro */
+    transition: transform 0.3s ease-out; /* Suavizar el movimiento */
+}
+
+#escuelas-psicologicas {
+    transform-origin: center; /* Escalar desde el centro */
+    transition: transform 0.3s ease-out; /* Suavizar el movimiento */
+    opacity: 1; /* Asegurar que no se desvanezca */
+    background-color: pink; /* Fondo rosa */
+    padding: 0px 10px; /* Espaciado interno ajustado */
+    border-radius: 10px; /* Bordes redondeados */
+    display: inline-block; /* Ajustar el ancho al contenido del texto */
+}

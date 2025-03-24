@@ -3,6 +3,7 @@ body {
     line-height: 2.1;
     margin: 0; /* Eliminar márgenes del cuerpo */
     padding: 0; /* Eliminar padding del cuerpo */
+    background-color: #292013; /* Color café claro para el fondo */
 }
 
 .App {
@@ -13,17 +14,40 @@ body {
 
 /* Estilos del sidebar */
 .sidebar {
-    width: 200px;
-    background: #f4f4f4;
-    padding: 15px;
+    width: 100%; /* Cambiar a ancho completo */
+    background: #2c2c2c; /* Color de fondo más oscuro */
+    padding: 10px; /* Espaciado interno */
     position: fixed; /* Fijar la barra lateral */
-    height: 100%; /* Asegurar que ocupe toda la altura de la página */
+    height: 60px; /* Altura de la barra horizontal */
     top: 0; /* Asegurar que esté alineada en la parte superior */
     z-index: 10; /* Asegurar que esté por encima del fondo rosa */
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-around; /* Espaciado entre los enlaces */
+    overflow: visible; /* Permitir que los elementos hijos sean visibles */
+}
+
+.sidebar-link {
+    color: #A0D3E8; /* Color del texto celeste pastel */
+    text-decoration: none; /* Sin subrayado */
+    background: none; /* Sin fondo */
+    border: none; /* Sin bordes */
+    transition: background 0.3s, color 0.3s, transform 0.3s; /* Transición suave */
+    font-size: 1.5em; /* Aumentar tamaño de fuente */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor a puntero */
+    margin: 0 10px; /* Agregar separación entre los botones */
+    transform: translateY(-15px);
+}
+
+.sidebar-link:hover {
+    background: rgba(173, 216, 230, 0.5); /* Fondo celeste pastel al pasar el mouse */
+    color: #ffffff; /* Cambiar color del texto al pasar el mouse */
+    transform: translateY(-10px); /* Desplazar ligeramente hacia arriba al pasar el mouse */
+    z-index: 1; /* Asegurar que el botón esté por encima de otros elementos */
 }
 
 header {
-    background: pink; /* Cambiar el fondo a rosa */
+    background: rgb(255, 187, 198); /* Cambiar el fondo a rosa */
     color: #4B3C3C; /* Cambiar el color del texto a marrón oscuro */
     padding: 93px 0; /* Ajustar padding a 93px */
     text-align: center; /* Centrar el texto */
@@ -83,4 +107,23 @@ footer {
 .cover ul {
     list-style-type: none; /* Sin viñetas */
     padding: 0; /* Sin padding */
+}
+
+.content {
+    margin: 10px; /* Ajustar el margen alrededor del contenido */
+    margin-top: 100vh; /* Asegurar que el contenido comience después del encabezado */
+}
+
+.content section:nth-child(odd) {
+    background-color: #f0f0f0; /* Color ligeramente más oscuro */
+    color: #333; /* Texto oscuro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.content section:nth-child(even) {
+    background-color: #2c2c2c; /* Color oscuro */
+    color: #f9f9f9; /* Texto claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
 }
