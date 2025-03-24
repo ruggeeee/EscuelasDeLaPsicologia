@@ -3,11 +3,16 @@ import { FaBars } from 'react-icons/fa'; // Importar el ícono
 
 const Content = ({ toggleSidebar }) => {
     return (
-        <div className="content" style={{ margin: '20px' }}> {/* Agregar margen al contenedor */}
+        <div className="content"> {/* Eliminar estilo en línea */}
             <FaBars style={{ position: 'fixed', top: '20px', left: '20px', cursor: 'pointer' }} onClick={toggleSidebar} /> {/* Ícono para mostrar/ocultar */}
             
             <section id="estructuralismo">
                 <h2>Estructuralismo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
+
+            <section id="funcionalismo">
+                <h2>Funcionalismo</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </section>
             

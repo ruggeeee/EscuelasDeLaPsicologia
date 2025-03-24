@@ -111,7 +111,7 @@ footer {
 
 .content {
     margin: 10px; /* Ajustar el margen alrededor del contenido */
-    margin-top: 100vh; /* Asegurar que el contenido comience después del encabezado */
+    margin-top: 2vh; /* Asegurar que el contenido comience después del encabezado */
 }
 
 .content section:nth-child(odd) {

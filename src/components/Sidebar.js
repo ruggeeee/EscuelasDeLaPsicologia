@@ -14,6 +14,7 @@ const Sidebar = ({ toggleSidebar, isVisible }) => {
             <ul style={{ display: 'flex', justifyContent: 'space-around', padding: '0', listStyleType: 'none' }}>
                 <li><button className="sidebar-link" onClick={() => scrollToSection('universidad-uflo')}>Presentación</button></li>
                 <li><button className="sidebar-link" onClick={() => scrollToSection('estructuralismo')}>Estructuralismo</button></li>
+                <li><button className="sidebar-link" onClick={() => scrollToSection('funcionalismo')}>Funcionalismo</button></li>
                 <li><button className="sidebar-link" onClick={() => scrollToSection('reflexologia')}>Reflexología</button></li>
                 <li><button className="sidebar-link" onClick={() => scrollToSection('conductivismo')}>Conductivismo</button></li>
                 <li><button className="sidebar-link" onClick={() => scrollToSection('gestalt')}>Gestalt</button></li>
