@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './FadingHeader.css'; // Asegúrate de que este archivo exista
+import RightImage from '../assets/images/text.svg'; // Imagen derecha
+import LeftImage from '../assets/images/left-image.png'; // Imagen izquierda
 
 const FadingHeader = () => {
     const [opacity, setOpacity] = useState(1);
@@ -26,6 +28,30 @@ const FadingHeader = () => {
 
     return (
         <header style={{ background: 'pink', height: '100vh', textAlign: 'center', position: 'relative' }}>
+            <img
+                src={LeftImage} // Usa la imagen SVG importada para la izquierda
+                alt="Left"
+                style={{
+                    position: 'absolute',
+                    top: `calc(66% + ${translateY + 100}px)`, // Aumentar desplazamiento en 100px
+                    left: '180px', // Simétrico respecto a la imagen derecha
+                    transform: 'translateY(-50%)',
+                    height: '80px', // Ajusta el tamaño según sea necesario
+                    transition: 'top 0.3s ease-out', // Suavizar el movimiento
+                }}
+            />
+            <img
+                src={RightImage} // Usa la imagen SVG importada para la derecha
+                alt="Right"
+                style={{
+                    position: 'absolute',
+                    top: `calc(66% + ${translateY + 100}px)`, // Aumentar desplazamiento en 100px
+                    right: '150px', // Simétrico respecto a la imagen izquierda
+                    transform: 'translateY(-50%)',
+                    height: '80px', // Ajusta el tamaño según sea necesario
+                    transition: 'top 0.3s ease-out', // Suavizar el movimiento
+                }}
+            />
             <h1 id="universidad-uflo" style={{ color: '#584730', fontSize: '3em', fontWeight: 'bold', opacity }}>Universidad Uflo</h1>
             <div style={{ textAlign: 'center', color: '#584730', marginTop: '0px' }}>
                 <h2 style={{ fontSize: '2em', fontWeight: 'bold', opacity }}>Psicología General I</h2>
