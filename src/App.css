@@ -1,43 +1,86 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    line-height: 2.1;
+    margin: 0; /* Eliminar márgenes del cuerpo */
+    padding: 0; /* Eliminar padding del cuerpo */
 }
 
 .App {
     display: flex;
     flex-direction: column; /* Cambiar a columnas */
+    height: 100vh; /* Asegurar que ocupe toda la altura de la ventana */
 }
 
-
-
+/* Estilos del sidebar */
 .sidebar {
     width: 200px;
     background: #f4f4f4;
     padding: 15px;
     position: fixed; /* Fijar la barra lateral */
+    height: 100%; /* Asegurar que ocupe toda la altura de la página */
+    top: 0; /* Asegurar que esté alineada en la parte superior */
+    z-index: 10; /* Asegurar que esté por encima del fondo rosa */
 }
-
-
-
-.content {
-    flex: 1;
-    padding: 20px;
-    margin-left: 0; /* Sin margen para que ocupe el espacio completo */
-}
-
-
 
 header {
-    background: #007bff;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background: pink; /* Cambiar el fondo a rosa */
+    color: #4B3C3C; /* Cambiar el color del texto a marrón oscuro */
+    padding: 93px 0; /* Ajustar padding a 93px */
+    text-align: center; /* Centrar el texto */
+    position: relative; /* Cambiar a posición relativa */
+    height: 100vh; /* Asegurar que ocupe toda la altura de la ventana */
+}
+
+.fade {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+header h2 {
+    font-size: 2.5em; /* Tamaño del título Universidad UFLO */
+    font-weight: bold; /* Negrita */
+}
+
+header h3 {
+    font-size: 2em; /* Tamaño del subtítulo */
+}
+
+header ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
     background: #f4f4f4;
+    position: absolute; /* Asegurar que el pie de página esté al final */
+    bottom: 0; /* Asegurar que esté al final de la página */
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: pink; /* Cambiar el color de fondo a rosa */
+    text-align: center; /* Centrar el texto */
+}
+
+.cover h1 {
+    font-size: 2.5em; /* Tamaño del título */
+}
+
+.cover h2 {
+    font-size: 1.5em; /* Tamaño del subtítulo */
+}
+
+.cover ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
 }

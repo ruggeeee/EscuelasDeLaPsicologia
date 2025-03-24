@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import Content from './components/Content';
+import FadingHeader from './components/FadingHeader';
 import './App.css';
 
 const App = () => {
@@ -12,16 +13,12 @@ const App = () => {
 
     return (
         <div className="App">
-            {isSidebarVisible && <Sidebar toggleSidebar={toggleSidebar} />}
-            <header>
-                <h1>Facultades de la Psicología</h1>
-            </header>
+            <Sidebar toggleSidebar={toggleSidebar} isVisible={isSidebarVisible} />
+            <FadingHeader />
             <main>
                 <Content toggleSidebar={toggleSidebar} />
             </main>
-            <footer>
-                <p>&copy; 2025 Proyecto Facultativo</p>
-            </footer>
+            {/* Footer removed as per request */}
         </div>
     );
 };

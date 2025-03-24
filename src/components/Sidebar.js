@@ -1,9 +1,11 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa'; // Importar el ícono
 
-const Sidebar = ({ toggleSidebar }) => {
+const Sidebar = ({ toggleSidebar, isVisible }) => {
+
     return (
-        <div className="sidebar">
+        <div className={`sidebar ${isVisible ? '' : 'hidden'}`}>
+
             <h2>Navegación</h2>
             <ul>
                 <li><a href="#conductivismo">Conductivismo</a></li>
