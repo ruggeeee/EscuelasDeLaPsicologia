@@ -110,7 +110,7 @@ footer {
 }
 
 .content {
-    margin: 10px; /* Ajustar el margen alrededor del contenido */
+    margin: 15px; /* Ajustar el margen alrededor del contenido */
     margin-top: 2vh; /* Asegurar que el contenido comience después del encabezado */
 }
 

@@ -52,16 +52,17 @@ const FadingHeader = () => {
                     transition: 'top 0.3s ease-out', // Suavizar el movimiento
                 }}
             />
-            <h1 id="universidad-uflo" style={{ color: '#584730', fontSize: '3em', fontWeight: 'bold', opacity }}>Universidad Uflo</h1>
+            <h1 id="universidad-uflo" style={{ color: '#584730', fontSize: '3em', fontWeight: 'bold', opacity }}>Universidad UFLO</h1>
             <div style={{ textAlign: 'center', color: '#584730', marginTop: '0px' }}>
                 <h2 style={{ fontSize: '2em', fontWeight: 'bold', opacity }}>Psicología General I</h2>
                 <h3 style={{ fontSize: '2.0em', opacity }}>Integrantes:</h3>
                 <ul style={{ padding: '0', listStyleType: 'none' }}>
-                    <li style={{ opacity }}>Lorem ipsum</li>
-                    <li style={{ opacity }}>Lorem ipsum</li>
-                    <li style={{ opacity }}>Lorem ipsum</li>
-                    <li style={{ opacity }}>Lorem ipsum</li>
-                    <li style={{ opacity }}>Lorem ipsum</li>
+                    <li style={{ opacity }}><strong>Pirchi, Aldana Belén</strong></li>
+                    <li style={{ opacity }}><strong>Stadnitchi, Victoria</strong></li>
+                    <li style={{ opacity }}><strong>Quinteros, Sofía Ailín</strong></li>
+                    <li style={{ opacity }}><strong>Saravia, Rocío Elisa</strong></li>
+                    <li style={{ opacity }}><strong>Quiroga, Rocío</strong></li>
+                    <li style={{ opacity }}><strong>Ruggeroni, Facundo Emmanuel</strong></li>
                 </ul>
                 <h2 style={{ fontSize: '1.8em', opacity }}>Presentan:</h2>
                 <h3
