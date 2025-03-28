@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa'; // Importar el ícono
+import MapImage from '../assets/images/Mapita.jpg'; // Imagen del mapa
 
 const Content = ({ toggleSidebar }) => {
     return (
@@ -309,7 +310,7 @@ Fallece de un paro cardíaco el 4 de febrero de 1987 en San Diego, California.</
             <section id="mapa">
                 <div style={{ textAlign: 'center', marginTop: '40px' }}>
                     <h2>Mapa</h2>
-                    <img src="map-image-url" alt="Mapa" style={{ width: '80%', borderRadius: '10px' }} />
+                    <img src={MapImage} alt="Mapa" style={{ width: '80%', borderRadius: '10px' }} />
                 </div>
             </section>
         </div>

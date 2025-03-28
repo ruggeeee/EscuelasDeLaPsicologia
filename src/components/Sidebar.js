@@ -21,6 +21,7 @@ const Sidebar = ({ toggleSidebar, isVisible }) => {
                 <li><button className="sidebar-link" onClick={() => scrollToSection('psicoanalisis')}>Psicoanálisis</button></li>
                 <li><button className="sidebar-link" onClick={() => scrollToSection('humanismo')}>Humanismo</button></li>
                 <li><button className="sidebar-link" onClick={() => scrollToSection('cognitivismo')}>Cognitivismo</button></li>
+                <li><button className="sidebar-link" onClick={() => scrollToSection('mapa')}>Mapa</button></li>
             </ul>
             <FaBars style={{ position: 'fixed', top: '20px', left: '20px', cursor: 'pointer' }} onClick={toggleSidebar} /> {/* Ícono para mostrar/ocultar */}
         </div>
