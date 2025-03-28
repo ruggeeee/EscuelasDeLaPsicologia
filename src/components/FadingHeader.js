@@ -69,7 +69,7 @@ const FadingHeader = () => {
                     id="escuelas-psicologicas"
                     style={{
                         fontSize: '2.2em',
-                        transform: `scale(${scale}) translateY(${translateY - 30}px)`, // Restar 10px al valor de translateY
+                        transform: `scale(${scale}) translateY(${translateY - 55}px)`, // Restar 10px al valor de translateY
                         transition: 'transform 0.3s ease-out',
                         opacity: 1, // Asegurar que no se desvanezca
                     }}
